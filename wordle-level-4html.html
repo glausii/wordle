@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORDLE</title>
+  <link rel="stylesheet" href="wordle-level-4css.css">
+</head>
+<body>
+  <div class="wordle-container1">
+    <div class="wordle-game-container1">
+        <a href="index.html"  onclick="showPage('Back to Menu')">
+            <button id="back-button" class="back-button">Back to Menu</button>  
+        </a>
+    </div>
+</div>
+<div class="wordle-container4">
+  <div class="wordle-game-container4">
+      <a href="wordle-level-5html.html" onclick="showPage('Next Level')">
+          <button id="next-button" class="next-button">Next Level</button>  
+      </a>
+  </div>
+</div>
+  <div class="container">
+    <div class="game-container">
+      <h1 class="title">WORDLE LEVEL 4</h1>
+      <p class="subtitle">Errate das geheime 6-Buchstaben-Wort mit nur 7 Versuchen.</p>
+      <div id="wordle-container">
+        <div id="word-display" class="word-display"></div>
+        <input type="text" class ="centered-input" id="guess-input" class="guess-input" maxlength="6">
+        <button id="guess-button" class="guess-button">Raten</button>
+      </div>
+      <div id="result-container">
+        <p id="attempts" class="attempts">Versuche: 0</p>
+        <ul id="guess-list" class="guess-list"></ul>
+        <p id="game-result" class="game-result"></p>
+        <button id="restart-button" class="restart-button" >Neustart</button>
+      </div>
+    </div>
+  </div>
+  <script src="wordle-level-4java.js"></script>
+</body>
+</html>

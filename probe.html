@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Single Page Navigation</title>
+  <style>
+    /* CSS-Stile hier einfügen */
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#" onclick="showPage('page1')">Seite 1</a></li>
+    <li><a href="#" onclick="showPage('page2')">Seite 2</a></li>
+    <li><a href="#" onclick="showPage('page3')">Seite 3</a></li>
+  </ul>
+  
+  <div id="content">
+    <!-- Hier wird der Inhalt der Seiten angezeigt -->
+  </div>
+  
+  <script>
+    function showPage(pageName) {
+      var content = document.getElementById('content');
+      var pageContent = '';
+
+      if (pageName === 'page1') {
+        pageContent = '<h2>Willkommen auf Seite 1</h2><p>Das ist der Inhalt von Seite 1.</p>';
+      } else if (pageName === 'page2') {
+        pageContent = '<h2>Willkommen auf Seite 2</h2><p>Das ist der Inhalt von Seite 2.</p>';
+      } else if (pageName === 'page3') {
+        pageContent = '<h2>Willkommen auf Seite 3</h2><p>Das ist der Inhalt von Seite 3.</p>';
+      }
+
+      content.innerHTML = pageContent;
+    }
+  </script>
+</body>
+</html>

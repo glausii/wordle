@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORDLE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wordle-container1">
+    <div class="wordle-game-container1">
+        <a href="MainMenu.html" target="_blank">
+            <button id="back-button" class="back-button">Back</button>  
+        </a>
+    </div>
+</div>
+  <div class="container">
+    <div class="game-container">
+      <h1 class="title">WORDLE</h1>
+      <p class="subtitle">Errate das geheime 5-Buchstaben-Wort mit nur 6 Versuchen.</p>
+      <div id="wordle-container">
+        <div id="word-display" class="word-display"></div>
+        <input type="text" class ="centered-input" id="guess-input" class="guess-input" maxlength="5">
+        <button id="guess-button" class="guess-button">Raten</button>
+      </div>
+      <div id="result-container">
+        <p id="attempts" class="attempts">Versuche: 0</p>
+        <ul id="guess-list" class="guess-list"></ul>
+        <p id="game-result" class="game-result"></p>
+        <button id="restart-button" class="restart-button" >Neustart</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+ hallo
